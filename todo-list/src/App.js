@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import TodoItem from "./components/TodoItem";
 
-function App() {
+const App = props => {
   const todoItems = [
     { title: "Le Dinh Tho", isComplete: true },
     { title: "Le Thi Hai Luong", isComplete: true },
@@ -16,6 +16,6 @@ function App() {
       ))}
     </div>
   );
-}
+};
 
 export default App;
