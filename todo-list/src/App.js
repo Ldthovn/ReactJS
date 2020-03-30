@@ -11,9 +11,9 @@ const App = props => {
 
   return (
     <div className="App">
-      {todoItems.map((item, index) => (
-        <TodoItem key={index} item={item} />
-      ))}
+      {todoItems.length > 0 &&
+        todoItems.map((item, index) => <TodoItem key={index} item={item} />)}
+      {todoItems.length === 0 && "Nothing here"}
     </div>
   );
 };
